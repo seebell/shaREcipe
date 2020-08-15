@@ -1,0 +1,28 @@
+{
+  "name": "shaREcipe",
+  "version": "1.0.0",
+  "description": "shaREcipe",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seebell/shaREcipe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seebell/shaREcipe/issues"
+  },
+  "homepage": "https://github.com/seebell/shaREcipe#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.0",
+    "react-router-dom": "^5.2.0"
+  }
+}
