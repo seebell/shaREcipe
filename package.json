@@ -18,10 +18,16 @@
   },
   "homepage": "https://github.com/seebell/shaREcipe#readme",
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/pickers": "^3.2.10",
     "axios": "^0.19.2",
     "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "if-env": "^1.0.4",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.0",
     "react-router-dom": "^5.2.0"
   }
