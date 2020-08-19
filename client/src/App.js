@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
-// import Profile from "./pages/Profile"
+import Profile from "./pages/Profile"
 import Login from "./pages/Login"
 import NewRecipe from "./pages/NewRecipe";
 import Home from "./pages/Home";
@@ -69,6 +69,7 @@ class App extends Component {
                 <ProtectedRoute exact path="/" component={Login} />
                 <ProtectedRoute exact path="/home" component={Home} />
                 <ProtectedRoute exact path="/newrecipe" component={NewRecipe} />
+                <ProtectedRoute exact path="/profile" component={Profile} />
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/signup" component={SignUp} />
               </UserContext.Provider>

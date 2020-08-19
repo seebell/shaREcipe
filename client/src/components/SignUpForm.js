@@ -102,16 +102,14 @@ function SignUp(props) {
           username: username,
           password: password
         };
-        API.signup(data, response => {
-            console.log(response);
-        })
-          .then(
+        API.signup(data)
+          .then(() => {
             Auth.logIn(username, password, response => {
               user.setUser(response);
               props.history.push("/");
         
-            })
-          )
+            });
+          })
           .catch(err => {
             console.log(err.response.data.error);
             setFormErrors({
@@ -147,7 +145,7 @@ function SignUp(props) {
                 label="Username"
                 name="username"
                 autoComplete="username"
-                
+                noValidate
                 autoFocus
                 value={formValues.username}
                 onChange={changeHandler}
@@ -167,7 +165,7 @@ function SignUp(props) {
                 label="Password"
                 type="password"
                 id="password"
-               
+                noValidate
                 autoComplete="current-password"
                 value={formValues.password}
                 onChange={changeHandler}
@@ -180,7 +178,7 @@ function SignUp(props) {
                 margin="normal"
                 required
                 fullWidth
-               
+                noValidate
                 name="confirmPassword"
                 label="Confirm Password"
                 type="password"

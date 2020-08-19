@@ -3,15 +3,13 @@ const db = require("../models");
 
 module.exports = {
     create: function (req, res) {
-        console.log(req.body)
+        // console.log(req.body)
         db.User.create(req.body)
             .then(function (result) {
-                console.log("this is from then")
 
                 res.json({ message: result.username + " Created" });
             })
             .catch(function (err) {
-                console.log("this is from the catch in the create")
                 res.status(500).json({ error: err.message });
             });
     },
@@ -30,7 +28,7 @@ module.exports = {
                     },
                     
                     process.env.KEY,
-                    { expiresIn: 3600}
+                    // { expiresIn: 3600}
                 );
                 res.json({
                     _id: dbUser._id,
