@@ -1,0 +1,78 @@
+.MuiFormLabel-root{
+    color: purple;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.00938em;
+}
+
+h5, h6{
+    display: inline;
+    }
+
+h6{
+    margin-bottom: 0;
+    margin-top: 1em;
+    font-size: 1.5rem;
+}
+
+h5{
+    margin-bottom: 0;
+    margin-top: 1em;
+    font-size: 1rem;
+}
+
+#ingAmount, #days, #hours, #minutes{
+    width: 3rem;
+}
+
+.subLabel{
+    margin-left: 1em;
+}
+
+li{
+    margin-bottom: .5em;
+}
+
+#ingBtn{
+    margin-left: 1em;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 1px 6px;
+    background-color: pink;
+    border: none;
+    cursor: pointer;
+    color: magenta;
+    font-size: 1.2em;
+}
+
+#createBtn{
+    margin: 2em auto;
+}
+
+#uploadBtn{
+    margin-top: .5em;
+}
+
+br{
+    display: none;
+}
+
+#wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 550px) {
+    br{
+        display: block;
+    }
+
+    .subInput{
+        margin-bottom: 1em;
+    }
+}

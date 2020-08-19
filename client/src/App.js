@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 // import Profile from "./pages/Profile"
 import Login from "./pages/Login"
-// import NewRecipe from "./pages/NewRecipe";
+import NewRecipe from "./pages/NewRecipe";
 import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
 import { Container } from "@material-ui/core";
@@ -68,6 +68,7 @@ class App extends Component {
               >
                 <ProtectedRoute exact path="/" component={Home} />
                 <ProtectedRoute exact path="/home" component={Home} />
+                <ProtectedRoute exact path="/newrecipe" component={NewRecipe} />
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/signup" component={SignUp} />
               </UserContext.Provider>
