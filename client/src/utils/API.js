@@ -1,10 +1,10 @@
 import axios from "axios";
 export default {
     signup: function (input) {
-        return axios.post("/api/signup", input);
+        return axios.post("/api/signup/", input);
     },
     authenticate: function (input) {
-        return axios.post("/api/authenticate", input);
+        return axios.post("/api/authenticate/", input);
     },
     getUser: function () {
         return axios.get("/api/me", {

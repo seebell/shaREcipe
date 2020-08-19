@@ -68,8 +68,6 @@ class App extends Component {
               >
                 <ProtectedRoute exact path="/" component={Home} />
                 <ProtectedRoute exact path="/home" component={Home} />
-                {/* <ProtectedRoute exact path="/newrecipe" component={NewRecipe} />
-                <ProtectedRoute exact path="/profile" component={Profile} /> */}
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/signup" component={SignUp} />
               </UserContext.Provider>
