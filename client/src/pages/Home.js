@@ -114,10 +114,10 @@ class Home extends Component {
                                 <option value={"Beer"}>Beer</option>
                                 <option value={"Cookie"}>Cookie</option>
                                 <option value={"Bread"}>Bread</option>
-                                <option value={"Pickle"}>Pickle</option>
+                                <option value={"Savory"}>Savory</option>
                                 <option value={"Cake"}>Cake</option>
                                 <option value={"Soup"}>Soup</option>
-                                <option value={"Wine"}>Wine</option>
+                                <option value={"Brunch"}>Brunch</option>
                                 <option value={"Cocktail"}>Cocktail</option>
                                 <option value={"Other"}>Other</option>
                             </NativeSelect>

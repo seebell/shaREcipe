@@ -10,7 +10,6 @@ import UserContext from '../../context/UserContext';
 class NewRecipeForm extends Component {
     static contextType = UserContext;
 
-    //Sets state
     state = {
         title: "",
         category: "Other",
@@ -24,12 +23,11 @@ class NewRecipeForm extends Component {
         picture: "",
         ingredient: "",
         amount: 1,
-        units: "mL",
+        units: "tsp",
         loading: false,
         message: ""
     }
 
-    //Handles changes in input
     handleInputChange = event => {
         const { name, value, type } = event.target;
 
@@ -39,14 +37,12 @@ class NewRecipeForm extends Component {
 
     };
 
-    //Handles changes in date
     handleDateChange = date => {
         this.setState({
             startTime: date
         });
     };
 
-    //Deletes specific ingredient
     deleteIngredient = name => {
         let filteredArr = this.state.ingredients.filter(function (obj) {
             return obj.ingredient !== name;
@@ -67,13 +63,11 @@ class NewRecipeForm extends Component {
         return endTime;
     }
 
-    //Formats prep length
     calcPrepLength = (days, hours, mins) => {
         let prepLength = `${days} days ${hours} hours ${mins} minutes 0 seconds`
         return prepLength;
     }
 
-    //Adds new ingredient
     addIngredient = event => {
         event.preventDefault();
         let ingredients = this.state.ingredients;
@@ -94,13 +88,12 @@ class NewRecipeForm extends Component {
             this.setState({
                 ingredient: "",
                 amount: 1,
-                units: "mL",
+                units: "tsp",
                 ingredients: [...ingredients, newIng]
             });
         }
     }
 
-    //image uploading
     imageUpload = async event => {
         const files = event.target.files;
         const data = new FormData();
@@ -140,16 +133,13 @@ class NewRecipeForm extends Component {
             picture: this.state.picture
         }
 
-        //Only uploads to database if title exists
         if (this.state.title !== "") {
 
-            //Runs API function
             API.createRecipe(data)
                 .then(result => {
                 })
                 .catch(err => console.log(err))
 
-            //Resets state
             this.setState({
                 title: "",
                 category: "Other",
@@ -163,14 +153,12 @@ class NewRecipeForm extends Component {
                 picture: "",
                 ingredient: "",
                 amount: 1,
-                units: "mL",
+                units: "tsp",
                 message: "New Recipe Added!"
             });
 
-            //Resets file input
             this.fileInput.value = "";
 
-            //displays message for limited time
             setTimeout(
                 function () {
                     this.setState({ message: "" });
@@ -192,7 +180,6 @@ class NewRecipeForm extends Component {
 
     };
 
-    //Renders form
     render() {
         return (
             <>

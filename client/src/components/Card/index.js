@@ -65,11 +65,16 @@ const Card = props => {
                 )}
             </ul>
 
-            <Typography variant="body1">
-              <b>Description:&nbsp;</b>
-              {props.description ? props.description : "(Not Provided)"}
-            </Typography>
+            
+              
+              
+            
           </Grid>
+          <b>Description:&nbsp;</b>
+              {props.description ? props.description : "(Not Provided)"}
+          <b>Suggestions:&nbsp;</b>
+              {props.suggestion ? props.suggestion : "(Not Provided)"}
+            
 
           <Grid item xs={12}>
             <Typography variant="body1">
