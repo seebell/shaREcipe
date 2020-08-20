@@ -234,7 +234,7 @@ class NewRecipeForm extends Component {
                                 id="ingAmount"
                                 className="subInput"
                                 type="number"
-                                min={1}
+                                min={0}
                                 placeholder={1}
                                 name="amount"
                                 onChange={this.handleInputChange}></input>
@@ -246,10 +246,10 @@ class NewRecipeForm extends Component {
                                 id="ingUnit"
                                 name="units"
                                 onChange={this.handleInputChange}>
+                                <option value={""}></option>
                                 <option value={"tsp"}>tsp</option>
                                 <option value={"cup"}>cup</option>
                                 <option value={"tbsp"}>tbsp</option>
-                                <option value={""}></option>
                                 <option value={"oz"}>oz</option>
                                 <option value={"lb"}>lb</option>
                             </NativeSelect>
@@ -268,18 +268,6 @@ class NewRecipeForm extends Component {
                             name="description"
                         />
                     </FormControl>
-
-                    <FormControl
-                        fullWidth={true}>
-                        <h6>Suggestions:</h6>
-                        <TextField
-                            multiline
-                            value={this.state.suggestion}
-                            onChange={this.handleInputChange}
-                            name="suggestion"
-                        />
-                    </FormControl>
-
 
                     <FormControl>
                         <h6>Start Time:</h6>

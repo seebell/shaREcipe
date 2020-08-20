@@ -72,8 +72,7 @@ const Card = props => {
           </Grid>
           <b>Description:&nbsp;</b>
               {props.description ? props.description : "(Not Provided)"}
-          <b>Suggestions:&nbsp;</b>
-              {props.suggestion ? props.suggestion : "(Not Provided)"}
+          
             
 
           <Grid item xs={12}>
