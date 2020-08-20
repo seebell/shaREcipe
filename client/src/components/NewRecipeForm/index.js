@@ -281,8 +281,19 @@ class NewRecipeForm extends Component {
                         />
                     </FormControl>
 
+                    <FormControl
+                        fullWidth={true}>
+                        <h6>Suggestions:</h6>
+                        <TextField
+                            multiline
+                            value={this.state.suggestion}
+                            onChange={this.handleInputChange}
+                            name="suggestion"
+                        />
+                    </FormControl>
 
-                    {/* <FormControl>
+
+                    <FormControl>
                         <h6>Start Time:</h6>
                         <MuiPickersUtilsProvider utils={DateFnsUtils}>
                             <KeyboardDatePicker
@@ -341,7 +352,7 @@ class NewRecipeForm extends Component {
                                 onChange={this.handleInputChange}
                                 placeholder={0}></input>
                         </div>
-                    </FormControl> */}
+                    </FormControl>
 
                     <FormControl>
                         <h6>Image:</h6>
