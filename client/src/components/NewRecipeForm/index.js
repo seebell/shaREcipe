@@ -105,7 +105,7 @@ class NewRecipeForm extends Component {
         const files = event.target.files;
         const data = new FormData();
         data.append('file', files[0]);
-        data.append('upload_preset', 'shaREcipe');
+        data.append('upload_preset', 'upload_preset');
         this.setState({ loading: true });
         const res = await fetch(
             'https://api.cloudinary.com/v1_1/seebell/image/upload',
@@ -215,10 +215,10 @@ class NewRecipeForm extends Component {
                             <option value={"Beer"}>Beer</option>
                             <option value={"Cookie"}>Cookie</option>
                             <option value={"Bread"}>Bread</option>
-                            <option value={"Pickle"}>Pickle</option>
+                            <option value={"Savory"}>Savory</option>
                             <option value={"Cake"}>Cake</option>
                             <option value={"Soup"}>Soup</option>
-                            <option value={"Wine"}>Wine</option>
+                            <option value={"Brunch"}>Brunch</option>
                             <option value={"Cocktail"}>Cocktail</option>
                         </NativeSelect>
                     </FormControl>
@@ -260,8 +260,9 @@ class NewRecipeForm extends Component {
                                 name="units"
                                 onChange={this.handleInputChange}>
                                 <option value={"tsp"}>tsp</option>
-                                <option value={"gal"}>gal</option>
+                                <option value={"cup"}>cup</option>
                                 <option value={"tbsp"}>tbsp</option>
+                                <option value={""}></option>
                                 <option value={"oz"}>oz</option>
                                 <option value={"lb"}>lb</option>
                             </NativeSelect>
