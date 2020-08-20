@@ -52,7 +52,7 @@ function LogIn(props) {
         if (username && password) {
             Auth.logIn(username, password, (response) => {
                 user.setUser(response);
-                props.history.push("/");
+                props.history.push("/home");
             });
         }
     }
