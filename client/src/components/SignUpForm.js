@@ -107,7 +107,7 @@ function SignUp(props) {
             Auth.logIn(username, password, response => {
               user.setUser(response);
               props.history.push("/");
-        
+
             });
           })
           .catch(err => {
@@ -131,8 +131,15 @@ function SignUp(props) {
           <LockOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
-          Sign Up
+          Sign Up to be a part of shaRecipe!
         </Typography>
+
+
+        <Typography component="p" variant="p5">
+          This is a social app for you to share all type of recipes.
+          We will be watching the prep time with the timer!
+                          </Typography>
+
         <form className={classes.form} onSubmit={submitHandler} noValidate>
           <Grid container spacing={2}>
             <Grid item xs={12}>

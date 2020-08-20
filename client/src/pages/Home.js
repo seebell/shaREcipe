@@ -93,7 +93,11 @@ class Home extends Component {
 
     render() {
         return (
+            
+            
+            
             <Grid container justify="center" spacing={6}>
+                <Grid item xs={12} m={8} ><h3>Time to check out some recipes!</h3></Grid>
                 <Grid item xs={12} sm={8} >
                     <FormControl
                         fullWidth={true}>

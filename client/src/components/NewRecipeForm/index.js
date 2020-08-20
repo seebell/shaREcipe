@@ -1,6 +1,6 @@
 import 'date-fns';
 import React, { Component } from "react";
-import { Button, TextField, Container, NativeSelect, FormControl, Input, FormHelperText } from '@material-ui/core';
+import { Button, TextField, Container, NativeSelect, Grid, FormControl, Input, FormHelperText } from '@material-ui/core';
 import { MuiPickersUtilsProvider, KeyboardDatePicker, KeyboardTimePicker } from '@material-ui/pickers';
 import DateFnsUtils from '@date-io/date-fns';
 import API from "../../utils/API"
@@ -184,6 +184,7 @@ class NewRecipeForm extends Component {
         return (
             <>
                 <Container maxWidth="sm">
+                <Grid item xs={12} m={8} ><h2>Let's shaRecipe!</h2></Grid>
                     <FormControl
                         fullWidth={true}>
                         <h6 >Title:</h6>

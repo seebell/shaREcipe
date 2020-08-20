@@ -48,13 +48,6 @@ const ProfileBio = props => {
           className={classes.link}>Logout</Link>
       </Button>
 
-      {/* <Grid item xs={12} sm={12}>
-            <Typography variant="body1">
-              <b>Bio:&nbsp;</b>
-              {props.description ? props.description : "No Bio"}
-            </Typography>
-          </Grid>  */}
-
     </Paper>
 
   );

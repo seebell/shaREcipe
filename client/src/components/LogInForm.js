@@ -67,7 +67,7 @@ function LogIn(props) {
                     <LockOutlinedIcon />
                 </Avatar>
                 <Typography component="h1" variant="h5">
-                    Log In
+                    Log In to shaRecipe!
                 </Typography>
                 <form className={classes.form} onSubmit={submitHandler} noValidate>
                     <Grid container spacing={2}>
