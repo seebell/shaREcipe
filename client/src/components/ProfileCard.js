@@ -69,11 +69,15 @@ const ProfileCard = props => {
                 )}
             </ul>
 
+            </Grid>  
+              
+              <Grid item xs={12}>
             <Typography variant="body1">
               <b>Description:&nbsp;</b>
               {props.description ? props.description : "(Not Provided)"}
             </Typography>
           </Grid>
+          
 
           <Grid item xs={12}>
             <Typography variant="body1">
