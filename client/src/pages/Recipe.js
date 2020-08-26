@@ -32,7 +32,14 @@ function Recipe(props) {
                                     ingredients={recipe.ingredients}
                                     endTime={recipe.endTime}
                                     prepLength={recipe.prepLength}
-                                  ></Card>
+                                  >
+                                    <Link to="/home">
+                            <strong>
+                              Click here to go back Home
+                            </strong>
+                          </Link>   
+                                    
+                                  </Card>
                 </Grid>
 
   )

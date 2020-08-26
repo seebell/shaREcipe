@@ -91,9 +91,16 @@ const Card = props => {
           </Grid>
           <Link to={"/recipe/" + props.id}>
                             <strong>
-                              {props.title} by {props.user}Click here
+                              {props.title} by {props.user}
                             </strong>
                           </Link>
+          <Grid item xs={12}>
+                          <Link to="/home">
+                            <strong>
+                              Click here to go back Home
+                            </strong>
+                          </Link>
+             </Grid>            
         </Grid>
       </Paper>
     </Grid>
