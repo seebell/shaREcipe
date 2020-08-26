@@ -6,6 +6,7 @@ import Login from "./pages/Login"
 import NewRecipe from "./pages/NewRecipe";
 import Recipe from "./pages/Recipe";
 import Home from "./pages/Home";
+// import UpdateRecipe from "./pages/UpdateRecipe";
 import SignUp from "./pages/SignUp";
 import { Container } from "@material-ui/core";
 import UserContext from "./context/UserContext";
@@ -71,6 +72,7 @@ class App extends Component {
                 <ProtectedRoute exact path="/newrecipe" component={NewRecipe} />
                 <ProtectedRoute exact path="/profile" component={Profile} />
                 <ProtectedRoute exact path="/recipe/:id" component={Recipe} />
+                {/* <ProtectedRoute exact path="/updaterecipe/:id" component={UpdateRecipe} /> */}
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/signup" component={SignUp} />
               </UserContext.Provider>
