@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { Button, TextField, Container, NativeSelect, Grid, FormControl, Input, FormHelperText } from '@material-ui/core';
 import { MuiPickersUtilsProvider, KeyboardDatePicker, KeyboardTimePicker } from '@material-ui/pickers';
 import DateFnsUtils from '@date-io/date-fns';
-import API from "../../utils/API"
+import API from "../../utils/API";
 import "./style.css";
 import UserContext from '../../context/UserContext';
 
@@ -345,7 +345,9 @@ class NewRecipeForm extends Component {
                             )}
 
                     </FormControl>
+                    
                     {(this.state.message) ? <p style={{ borderRadius: '4px', padding: '1em', backgroundColor: 'white', textAlign: 'center', margin: '0 auto' }}><b>{this.state.message}</b></p> : <></>}
+                    
                     <div id="wrapper">
                         <Button
                             size="large"

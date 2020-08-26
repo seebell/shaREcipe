@@ -22,6 +22,10 @@ export default {
     getUserRecipes: function (id) {
         return axios.get("/api/recipes/" + id);
     },
+    getOneRecipe: function (id) {
+        console.log("gettting one recipe")
+        return axios.get("/api/recipe/" + id);
+    },
     getAllRecipes: function () {
         return axios.get("/api/recipes");
     }

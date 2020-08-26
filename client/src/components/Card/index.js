@@ -2,6 +2,9 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Grid, Paper } from "@material-ui/core";
 import Timer from "../Timer";
+import { Link } from "react-router-dom";
+import { timePickerDefaultProps } from "@material-ui/pickers/constants/prop-types";
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -86,6 +89,11 @@ const Card = props => {
               <b>Prep Status:</b> <Timer endTime={props.endTime}></Timer>
             </Typography>
           </Grid>
+          <Link to={"/recipe/" + props.id}>
+                            <strong>
+                              {props.title} by {props.user}Click here
+                            </strong>
+                          </Link>
         </Grid>
       </Paper>
     </Grid>

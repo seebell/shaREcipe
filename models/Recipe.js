@@ -8,6 +8,11 @@ const RecipeSchema = new mongoose.Schema({
         amount: Number,
         units: String
     }],
+    comments: [
+        {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Comment"
+    }],
     description: String,
     startTime: Date,
     endTime: Date,

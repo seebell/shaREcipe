@@ -4,6 +4,7 @@ import "./App.css";
 import Profile from "./pages/Profile"
 import Login from "./pages/Login"
 import NewRecipe from "./pages/NewRecipe";
+import Recipe from "./pages/Recipe";
 import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
 import { Container } from "@material-ui/core";
@@ -14,7 +15,6 @@ import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import NavBar from "./components/NavBar";
 import Auth from "./utils/Auth";
-
 
 const theme = createMuiTheme({
   palette: {
@@ -70,6 +70,7 @@ class App extends Component {
                 <ProtectedRoute exact path="/home" component={Home} />
                 <ProtectedRoute exact path="/newrecipe" component={NewRecipe} />
                 <ProtectedRoute exact path="/profile" component={Profile} />
+                <ProtectedRoute exact path="/recipe/:id" component={Recipe} />
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/signup" component={SignUp} />
               </UserContext.Provider>

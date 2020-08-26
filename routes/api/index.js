@@ -3,10 +3,12 @@ const authRoutes = require("./auth");
 const recipeRoutes = require("./recipes");
 const signupRoutes = require("./signup")
 const meRoute = require("./me")
+const recipe = require('./recipe')
 
 router.use("/signup", signupRoutes)
 router.use("/authenticate", authRoutes);
 router.use("/me", meRoute);
 router.use("/recipes", recipeRoutes);
+router.use("/recipe", recipe);
 
 module.exports = router;

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import API from "../utils/API";
+import { Link } from "react-router-dom";
 import Card from "../components/Card";
 import { Grid, InputLabel, NativeSelect, FormControl, Input, FormHelperText, Typography, Paper } from '@material-ui/core';
 
@@ -147,7 +148,7 @@ class Home extends Component {
                     {this.state.recipes.length > 0 ? (
                         <>
                             {this.state.recipes.map(recipe => (
-
+                            
 
 
                                 <Card key={recipe._id}
@@ -160,7 +161,13 @@ class Home extends Component {
                                     ingredients={recipe.ingredients}
                                     endTime={recipe.endTime}
                                     prepLength={recipe.prepLength}
-                                    setUser={this.setUser} ></Card>
+                                    setUser={this.setUser} >
+                                     <Link to={"/recipe/" + recipe._id}>
+                            <strong>
+                              {recipe.title} by {recipe.user}Click here
+                            </strong>
+                          </Link>   
+                                    </Card>
 
 
 

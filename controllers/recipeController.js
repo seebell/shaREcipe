@@ -38,7 +38,13 @@ module.exports = {
                 res.json({ message: err });
             });
     },
-
+    findById: function(req, res) {
+        console.log(req.params.id)
+        db.Recipe
+          .findById(req.params.id)
+          .then(dbRecipes => res.json(dbRecipes))
+          .catch(err => res.status(422).json(err));
+      },
     findAll: function (req, res) {
         db.Recipe.find(req.query)
             .sort({ startTime: -1 })
