@@ -16,6 +16,12 @@ export default {
     createRecipe: function (recipe) {
         return axios.post("/api/recipes", recipe);
     },
+    createComment: function (id) {
+        return axios.post("/api/recipe/" + id);
+    },
+    getComments: function (id) {
+         return axios.post("/api/recipes/comments/" + id);
+    },
     deleteRecipe: function (id) {
         return axios.delete("/api/recipes/" + id);
     },
@@ -28,7 +34,7 @@ export default {
     },
     getAllRecipes: function () {
         return axios.get("/api/recipes");
-    },
+    }
     // updateRecipe: function(){
     //     return axios.get("/api/updateRecipe");
     // },

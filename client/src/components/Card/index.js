@@ -3,7 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Grid, Paper } from "@material-ui/core";
 import Timer from "../Timer";
 import { Link } from "react-router-dom";
-import { timePickerDefaultProps } from "@material-ui/pickers/constants/prop-types";
+// import CommentBox from "../CommentBox";
+// import { Button, TextField, Container, NativeSelect, FormControl, Input, FormHelperText } from '@material-ui/core';
 
 
 const useStyles = makeStyles(theme => ({
@@ -67,17 +68,9 @@ const Card = props => {
                   <p>(None Listed)</p>
                 )}
             </ul>
-
-            
-              
-              
-            
           </Grid>
           <b>Description:&nbsp;</b>
               {props.description ? props.description : "(Not Provided)"}
-          
-            
-
           <Grid item xs={12}>
             <Typography variant="body1">
               <b>Total Prep Time:</b> {props.prepLength}
@@ -100,7 +93,7 @@ const Card = props => {
                               Click here to go back Home
                             </strong>
                           </Link>
-             </Grid>            
+             </Grid>
         </Grid>
       </Paper>
     </Grid>

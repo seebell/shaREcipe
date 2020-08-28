@@ -1,4 +1,4 @@
   
-import { createContext } from "react";
+import { createContext  } from "react";
 
-export default createContext();
+export default createContext({user:{_id:123}});
