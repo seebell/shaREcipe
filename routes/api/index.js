@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const authRoutes = require("./auth");
-const recipeRoutes = require("./recipes");
+const recipesRoutes = require("./recipes");
 const signupRoutes = require("./signup")
 const meRoute = require("./me")
 const recipe = require('./recipe')
@@ -9,7 +9,7 @@ const recipe = require('./recipe')
 router.use("/signup", signupRoutes)
 router.use("/authenticate", authRoutes);
 router.use("/me", meRoute);
-router.use("/recipes", recipeRoutes);
+router.use("/recipes", recipesRoutes);
 router.use("/recipe", recipe);
 // router.use("/updateRecipe", updateRecipe);
 

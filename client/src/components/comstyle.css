@@ -1,0 +1,40 @@
+.MuiFormLabel-root{
+    color: purple;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.00938em;
+}
+
+h6{
+    
+    margin-bottom: 0;
+    margin-top: 1em;
+    font-size: 1.5rem;
+}
+
+
+.subLabel{
+    margin-left: 1em;
+}
+
+li{
+    margin-bottom: .5em;
+}
+
+
+#createCommentBtn{
+    margin: 2em auto;
+}
+
+#wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 550px) {
+    br{
+        display: block;
+    }
+}

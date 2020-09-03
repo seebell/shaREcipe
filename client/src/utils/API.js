@@ -16,12 +16,16 @@ export default {
     createRecipe: function (recipe) {
         return axios.post("/api/recipes", recipe);
     },
-    createComment: function (id) {
-        return axios.post("/api/recipe/" + id);
+    createComment: function (comment) {
+        return axios.post("/api/recipe/" + comment.recipe, comment);
     },
     getComments: function (id) {
-         return axios.post("/api/recipes/comments/" + id);
-    },
+        return axios.get(`/api/recipes/${id}/comments` );
+   }
+    //getComments: function (id) {
+       //  return axios.post("/api/recipes/comments/" + id);
+    //}
+    ,
     deleteRecipe: function (id) {
         return axios.delete("/api/recipes/" + id);
     },

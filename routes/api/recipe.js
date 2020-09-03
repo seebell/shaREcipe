@@ -5,6 +5,7 @@ router
     .route("/:id")
     .get(recipeController.findById)
     .put(recipeController.update)
+    .post(recipeController.addComment)
     .delete(recipeController.delete);
 module.exports = router;
 
