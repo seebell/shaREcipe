@@ -3,7 +3,7 @@ import axios from "axios";
 function Auth() {
 
   function logIn(username, password, cb) {
-    axios.post("/api/authenticate", { username: username, password: password })
+    axios.post("https://immense-ridge-04108.herokuapp.com/api/authenticate", { username: username, password: password })
       .then(response => {
         localStorage.setItem("token", response.data.token);
         cb(response.data);
