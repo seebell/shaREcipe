@@ -66,7 +66,7 @@ class App extends Component {
                   setUser: setUser
                 }}
               >
-                <ProtectedRoute exact path="/" component={Login} />
+                <ProtectedRoute exact path="/" component={Home} />
                 <ProtectedRoute exact path="/home" component={Home} />
                 <ProtectedRoute exact path="/newrecipe" component={NewRecipe} />
                 <ProtectedRoute exact path="/profile" component={Profile} />

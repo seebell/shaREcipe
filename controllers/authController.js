@@ -28,7 +28,6 @@ module.exports = {
                     },
                     
                     process.env.KEY,
-                    { expiresIn: 3600}
                 );
                 res.json({
                     _id: dbUser._id,

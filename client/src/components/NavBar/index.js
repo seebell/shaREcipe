@@ -66,11 +66,6 @@ const NavBar = (props) => {
               New Recipe
             </Link>
           </Button>
-          {/* <Button>
-            <Link color="inherit" to="/comment" className={classes.link}>
-              Comment
-            </Link>
-          </Button> */}
           <Button>
             <Link color="inherit" to="/profile" className={classes.link}>Profile</Link>
           </Button></>

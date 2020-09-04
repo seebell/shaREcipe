@@ -3,9 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Grid, Paper } from "@material-ui/core";
 import Timer from "../Timer";
 import { Link } from "react-router-dom";
-// import CommentBox from "../CommentBox";
-// import { Button, TextField, Container, NativeSelect, FormControl, Input, FormHelperText } from '@material-ui/core';
-
 
 const useStyles = makeStyles(theme => ({
   root: {
