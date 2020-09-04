@@ -16,7 +16,7 @@ app.use(routes);
 
 // mongoose.connect(process.env.MONGODB_URI);
 // mongoose.connect("mongodb://localhost/shaREcipe", { useNewUrlParser: true })
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/sharecipe", 
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/shaRecipe", 
 {
   useNewUrlParser: true,
   useUnifiedTopology: true,
