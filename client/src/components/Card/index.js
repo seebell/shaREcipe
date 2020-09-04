@@ -37,7 +37,7 @@ const Card = props => {
               src={
                 props.picture !== ""
                   ? props.picture
-                  : ""
+                  : "./images/qmark.png"
               }
               style={{ width: "100%" }}
               alt="User Prep"

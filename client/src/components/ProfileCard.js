@@ -42,7 +42,7 @@ const ProfileCard = props => {
               src={
                 props.picture !== ""
                   ? props.picture
-                  : "./images/shaREcipe-default.jpg"
+                  : "./images/qmark.png"
               }
               style={{ width: "100%" }}
               alt="User Recipe"
