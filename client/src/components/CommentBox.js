@@ -3,7 +3,6 @@ import { Button, TextField, Container, FormControl } from '@material-ui/core';
 import API from "../utils/API";
 import UserContext from "../context/UserContext";
 import "./comstyle.css";
-import {makeStyles} from '@material-ui/core/styles'
 
 function CommentBox(props) {
     const { user } = useContext(UserContext);
