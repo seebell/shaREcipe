@@ -79,10 +79,17 @@ module.exports = {
                 db.Comment.findById(el).then(data => commentArray.push(data))
             })
         })
-        // .catch(err => {
-        //     res.json({ message:err });
-        // });
         console.log('COMMENT ARRAY __>', commentArray)
+    },
+    deleteComment: function (req, res) {
+        console.log("testing")
+        db.Comment.deleteOne({ _id: req.params.id })
+            .then(result => {
+                res.json(result);
+            })
+            .catch(err => {
+                res.status(422).json(err);
+            });
     },
 
     findUserRecipes: function (req, res) {

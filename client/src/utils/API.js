@@ -19,13 +19,9 @@ export default {
     createComment: function (comment) {
         return axios.post("/api/recipe/" + comment.recipe, comment);
     },
-    getComments: function (id) {
-        return axios.get(`/api/recipes/${id}/comments` );
-   }
-    //getComments: function (id) {
-       //  return axios.post("/api/recipes/comments/" + id);
-    //}
-    ,
+   deleteComment: function (id) {
+    return axios.delete(`/api/recipe/${id}`);
+   },
     deleteRecipe: function (id) {
         return axios.delete("/api/recipes/" + id);
     },

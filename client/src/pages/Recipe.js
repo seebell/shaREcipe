@@ -4,6 +4,7 @@ import API from "../utils/API";
 import Card from "../components/Card";
 import { Grid } from '@material-ui/core';
 import CommentBox from "../components/CommentBox";
+import DeleteCommentButton from "../components/DeleteCommentButton"
 function Recipe(props) {
   const [recipe, setRecipe] = useState()
   const { id } = useParams()
@@ -56,7 +57,20 @@ function Recipe(props) {
       </Grid>
       {recipe.comments.map(comment => (
         <div>
-          <p key={comment._id} >{`Comment: ${comment.comment} by ${comment.user.username}`}</p>
+          <Grid container item xs={12} spacing={12}>
+      <img
+        className="mr-3 bg-light rounded"
+        width="48"
+        height="48"
+        src={`https://api.adorable.io/avatars/48/${comment.user.username.toLowerCase()}@adorable.io.png`}
+        alt={comment.user.username} />
+        <p> {`Posted by  ${comment.user.username}`} </p> 
+        
+          <DeleteCommentButton id={comment._id} getRecipe={getRecipe} />
+          </Grid>
+          <Grid container item xs={12} spacing={12}>
+          <p key={comment._id} >{`Comment: ${comment.comment}`}</p>
+          </Grid>
         </div>
       ))}
     </React.Fragment>

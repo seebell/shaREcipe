@@ -164,7 +164,7 @@ class Home extends Component {
                                     setUser={this.setUser} >
                                      <Link to={"/recipe/" + recipe._id}>
                             <strong>
-                              {recipe.title} by {recipe.user}
+                              Click here to make/view comments
                             </strong>
                           </Link>   
                                     </Card>

@@ -6,6 +6,6 @@ router
     .get(recipeController.findById)
     .put(recipeController.update)
     .post(recipeController.addComment)
-    .delete(recipeController.delete);
+    .delete(recipeController.deleteComment);
 module.exports = router;
 

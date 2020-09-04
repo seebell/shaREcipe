@@ -94,7 +94,7 @@ const ProfileCard = props => {
           </Grid>
           <Link to={"/recipe/" + props.id}>
                             <strong>
-                              {props.title} by {props.user}
+                              Click here to make/view comments
                             </strong>
                           </Link>
           <Grid item xs={12}>
