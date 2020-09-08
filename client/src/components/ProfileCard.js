@@ -4,7 +4,6 @@ import { Typography, Grid, Paper } from "@material-ui/core";
 import Timer from "./Timer";
 import { Link } from "react-router-dom";
 import CloseButton from "./CloseButton"
-import UpdateButton from "./UpdateButton";
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1
@@ -33,7 +32,6 @@ const ProfileCard = props => {
             <Typography variant="h5">
               {props.title} by {props.user ? props.user : "Anonymous User"}{" "}
             </Typography>
-            <UpdateButton id={props.id} loadRecipes={props.loadRecipes} />
             <CloseButton id={props.id} loadRecipes={props.loadRecipes} />
           </Grid>
           <Grid item xs={12} sm={6}>

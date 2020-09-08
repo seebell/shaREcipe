@@ -35,7 +35,4 @@ export default {
     getAllRecipes: function () {
         return axios.get("/api/recipes");
     }
-    // updateRecipe: function(){
-    //     return axios.get("/api/updateRecipe");
-    // },
 };

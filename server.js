@@ -14,8 +14,6 @@ if (process.env.NODE_ENV === "production") {
 
 app.use(routes);
 
-// mongoose.connect(process.env.MONGODB_URI);
-// mongoose.connect("mongodb://localhost/shaREcipe", { useNewUrlParser: true })
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/shaRecipe", 
 {
   useNewUrlParser: true,
