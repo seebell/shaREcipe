@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import API from "../utils/API";
+import "./style.css";
 import Card from "../components/Card";
 import "../components/comstyle.css";
 import { Grid, Paper } from '@material-ui/core';
@@ -52,7 +53,6 @@ function Recipe(props) {
         </Card>
         
         <CommentBox
-        
           id={recipe._id}
           getRecipe={getRecipe}
         />
@@ -69,7 +69,7 @@ function Recipe(props) {
         height="48"
         src={`https://api.adorable.io/avatars/48/${comment.user.username.toLowerCase()}@adorable.io.png`}
         alt={comment.user.username} />
-        <p> {`Posted by  ${comment.user.username}`} </p> 
+        <p id="username"> {`Posted by  ${comment.user.username}`} </p> 
         
           <DeleteCommentButton id={comment._id} getRecipe={getRecipe} />
           </Grid>

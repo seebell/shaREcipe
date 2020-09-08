@@ -168,9 +168,6 @@ class Home extends Component {
                             </strong>
                           </Link>   
                                     </Card>
-
-
-
                             ))}
                         </>
                     ) : (
@@ -179,7 +176,6 @@ class Home extends Component {
                     }
                 </Grid>
             </Grid>
-
         )
     };
 }
