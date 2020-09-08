@@ -139,7 +139,7 @@ class Profile extends Component {
                                 <option value={"Pickle"}>Pickle</option>
                                 <option value={"Cake"}>Cake</option>
                                 <option value={"Soup"}>Soup</option>
-                                <option value={"Wine"}>Wine</option>
+                                <option value={"Brunch"}>Brunch</option>
                                 <option value={"Cocktail"}>Cocktail</option>
                                 <option value={"Other"}>Other</option>
                             </NativeSelect>
