@@ -33,7 +33,7 @@ As an adventurous cook, I want an app that would let me find and post recipes ea
 
 
 ## Screenshot for the app
-  ![](https://github.com/seebell/shaREcipe/blob/master/sharecipe.jpg)<br>
+  ![](https://github.com/seebell/shaREcipe/blob/master/client/public/images/sharecipe.jpg)<br>
   
 
 # Heroku link for the deployed app
