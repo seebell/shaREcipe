@@ -25,7 +25,7 @@ Clone the repo; npm i and start your server!
 
 ## Usage
 
-Easy to use; just sign up/ login for your account; search the recipes with the variety of filters and post your own recipes easily!
+Easy to use; just sign up/ login for your account; search the recipes with the variety of filters, post your own recipes easily and make comments on recipes! Delete your posted recipes and comments if you don't want them any more.
 
 
 ### User story
@@ -37,4 +37,4 @@ As an adventurous cook, I want an app that would let me find and post recipes ea
   
 
 # Heroku link for the deployed app
-https://immense-ridge-04108.herokuapp.com/login
+https://immense-ridge-04108.herokuapp.com/
