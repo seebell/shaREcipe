@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import API from "../utils/API";
 import Card from "../components/Card";
-import { Grid } from '@material-ui/core';
+import "../components/comstyle.css";
+import { Grid, Paper } from '@material-ui/core';
 import CommentBox from "../components/CommentBox";
 import DeleteCommentButton from "../components/DeleteCommentButton"
 function Recipe(props) {
@@ -26,7 +27,6 @@ function Recipe(props) {
 
   if (!recipe)
     return null;
-
   return (
     <React.Fragment>
 
@@ -50,14 +50,19 @@ function Recipe(props) {
           </strong>
           </Link>
         </Card>
+        
         <CommentBox
+        
           id={recipe._id}
           getRecipe={getRecipe}
         />
+        
       </Grid>
       {recipe.comments.map(comment => (
-        <div>
-          <Grid container item xs={12} spacing={12}>
+       
+      <Paper variant="outlined" elevation={8} maxWidth="sm">
+        
+       <Grid container item xs={12} spacing={12}>
       <img
         className="mr-3 bg-light rounded"
         width="48"
@@ -68,10 +73,12 @@ function Recipe(props) {
         
           <DeleteCommentButton id={comment._id} getRecipe={getRecipe} />
           </Grid>
-          <Grid container item xs={12} spacing={12}>
-          <p key={comment._id} >{`Comment: ${comment.comment}`}</p>
+          
+          <Grid container item lg={12} justify="center" spacing={12}>
+          <p key={comment._id }  >{`Comment: ${comment.comment}`}</p>
           </Grid>
-        </div>
+        </Paper>
+        
       ))}
     </React.Fragment>
   )
